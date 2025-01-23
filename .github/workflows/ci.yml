@@ -23,5 +23,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: rm -rf node_modules package-lock.json
+      - name: Install Vercel CLI
+        run: npm install -g vercel
       - name: Deploy to Vercel
         run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
