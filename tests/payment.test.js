@@ -1,5 +1,6 @@
 const request = require('supertest');
 const app = require('../app');
+const axios = require('axios')
 
 describe('Payment API Tests', () => {
   it('should create a new payment', async () => {

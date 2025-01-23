@@ -4,11 +4,17 @@
   "description": "A RESTful Payment Gateway API for small businesses.",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "jest"
   },
-  "keywords": ["payment", "api", "gateway", "express"],
+  "keywords": [
+    "payment",
+    "api",
+    "gateway",
+    "express"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
@@ -19,6 +25,7 @@
     "uuid": "^11.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "jest": "^29.7.0",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0"
